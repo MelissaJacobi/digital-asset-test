@@ -1,4 +1,6 @@
 import { Text, View } from "react-native";
+import LabelledButton from "@/components/molecules/labelledButton";
+import InputForm from "@/components/molecules/inputForm";
 
 export default function Index() {
   return (
@@ -9,7 +11,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <LabelledButton buttonText="click me!" labelText="This is a label" />
+      <InputForm buttonText="Click Me!" labelText="This is a label" />
     </View>
   );
 }
